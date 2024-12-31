@@ -3,6 +3,7 @@ body{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: #0f1316;
 }
 
 .container {
@@ -14,7 +15,8 @@ body{
 
 .container-layout{
     width: 440px;
-    height: 1078px;
+    height: 1600px;
+    max-height: 1500px;
     top: 691px;
     left: 676px;
     gap: 0px;

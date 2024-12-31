@@ -20,8 +20,6 @@ export class OrdersComponent {
   }
 
   handleSearhEmit(value: string){
-    console.log(this.ordersUpcoming);
-    console.log(this.ordersTemp);
     this.ordersUpcoming.result = this.ordersTemp.filter( order => order.order_number.toLowerCase().includes(value.toLowerCase()))
     
   }

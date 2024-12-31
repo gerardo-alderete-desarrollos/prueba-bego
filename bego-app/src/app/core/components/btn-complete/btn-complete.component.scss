@@ -10,7 +10,13 @@
     backdrop-filter: blur(35px);
     border-radius: 0px 0px 19px 19px;
     position: relative;
-    top: 82px;
+    top: 79px;
+
+    &:disabled{
+        background-color: #081813;
+        color: #2d3134;
+        box-shadow: inset -4px -4px 4px #081813;
+    }
 }
 
 .track-order {

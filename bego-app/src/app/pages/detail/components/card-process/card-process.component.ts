@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-process',
@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
   templateUrl: './card-process.component.html',
   styleUrl: './card-process.component.scss'
 })
-export class CardProcessComponent {
+export class CardProcessComponent implements OnInit{
+  @Input() statusList!: Array<any>;
+  @Input() startDate!: number;
+  @Input() thumbnail!: any;
+  date!: Date;
+
+  ngOnInit(): void {
+    this.date = new Date(this.startDate);
+  }
+
 
 }

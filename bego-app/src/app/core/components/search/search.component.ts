@@ -11,7 +11,6 @@ export class SearchComponent {
   @Output() eventKeyUp: EventEmitter<string> = new EventEmitter()
 
   keyupHandle(event:KeyboardEvent  | any){
-    console.log(event.target.value);
     this.eventKeyUp.emit(event.target.value)
   }
 }

@@ -1,0 +1,27 @@
+<div class="collapse-container">
+    <button class="btn-collapse" (click)="showInfo = !showInfo;">
+        <span class="text-button">
+            {{dataCollapse.title}}
+
+        </span>
+    </button>
+    <img src="arrow-up.svg" class="arrow-up">
+
+    @if(showInfo){
+        <div class="content-detail">
+            <h2 class="direction detail">
+                {{dataCollapse.destination.address}}
+            </h2>
+            <h2 class="date detail">
+                {{startDate | date}}  {{startDate | date: 'mm:ss'}} 
+            </h2>
+            <h2 class="tel detail">
+                {{dataCollapse.destination.contact_info.telephone}}
+            </h2>
+            <h2 class="email detail">
+                {{dataCollapse.destination.contact_info.email}}
+    
+            </h2>
+        </div>
+    }
+</div>

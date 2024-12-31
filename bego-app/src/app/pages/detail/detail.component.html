@@ -1,5 +1,16 @@
 <div class="container-layout">
     <app-header [title]="'Cargo Details'"/>
-    <app-card-detail/>
-    <app-card-process/>
-</div>
+    <app-card-detail [destinations]="orderRequest.result.destinations" 
+                     [reference_number]="orderRequest.result.reference_number" 
+                     [order_number]="orderRequest.result.order_number"
+                     (emiter)="handleSwitch($event)"
+    />
+    @if(statusList){
+        <app-card-process [statusList]="statusList" 
+                          [startDate]="orderRequest.result.start_date"
+                          [thumbnail]="orderRequest.result.driver.thumbnail"/>
+    }    
+    @if(dataCollapse){
+        <app-collapse [dataCollapse]="dataCollapse"/>
+    }
+</div> 

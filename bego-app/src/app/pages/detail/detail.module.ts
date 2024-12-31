@@ -6,13 +6,15 @@ import { CardDetailComponent } from './components/card-detail/card-detail.compon
 import { CardProcessComponent } from './components/card-process/card-process.component';
 import { DetailRoutingModule } from './detail-routing.module';
 import { ComponentsModule } from '../../core/components/components.module';
+import { CollapseComponent } from './components/collapse/collapse.component';
 
 
 @NgModule({
   declarations: [
     DetailComponent,
     CardDetailComponent,
-    CardProcessComponent
+    CardProcessComponent,
+    CollapseComponent
   ],
   imports: [
     CommonModule,
