@@ -3,23 +3,22 @@
 
 
 .btn-complete {
-    width: 357px;
+    width: 360px;
     height: 74px;
-
     background: #FFEE00;
     box-shadow: inset -4px -4px 4px #C2B500;
     backdrop-filter: blur(35px);
     border-radius: 0px 0px 19px 19px;
+    position: relative;
+    top: 82px;
 }
 
 .track-order {
-    /* Track Order */
     position: absolute;
     width: 118px;
     height: 23px;
     right: 121px;
     bottom: 17.49px;
-
     font-family: 'Avenir';
     font-style: normal;
     font-weight: 800;
@@ -27,6 +26,5 @@
     line-height: 27px;
     display: flex;
     align-items: center;
-
     color: #080C0F;
 }
