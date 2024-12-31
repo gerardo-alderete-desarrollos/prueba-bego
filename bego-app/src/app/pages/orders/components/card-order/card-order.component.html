@@ -1,0 +1,63 @@
+<div class="card-order-container">
+
+    <h3 class="order-title">
+        <span>Order</span>
+        #{{order.order_number}}
+    </h3>
+    <div class="card">
+        <div class="card-header">
+            <div >
+                @if( order.type == 'FTL'){
+                    <img src="ftl.png" class="ftl-img">
+                } @else if(order.type == 'FCL'){
+                    <img src="fcl.png" class="ftl-img">
+                }
+                <h3 class="text-icon">
+                    {{order.type}}
+                </h3>
+            </div>
+            <div>
+
+                @if( order.status === 1){
+                    <img src="gray-circle.png" class="intransit-img">
+                }@else if( order.status === 3 ){
+                    <img src="blue-circle.png" class="intransit-img">
+                }
+                <h3 class="text-status"> 
+                    {{order.status_string}}
+                </h3>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="item">
+                <img src="trailer.png" alt="" class="img-trailer">
+                <div class="detail-section">
+                    <h5 class="name">PICKUP</h5>
+                    <h3 class="state">{{statePickup}}</h3>
+                    <h4 class="direction">{{directionPickup}}</h4>
+                </div>
+                <div class="date-section">
+                    <h4 class="date">{{startDatePickup | date: 'dd/MM/yy'}}</h4>
+                    <h3 class="time">{{startDatePickup | date: 'hh:mm'}}</h3>
+                </div>
+            </div>
+            <img src="line.png"class="line-icon">
+            <div class="item pin">
+                <img src="pin.png" alt="" class="img-pin">
+                <div class="detail-section">
+                    <h5 class="name">DROPOFF</h5>
+                    <h3 class="state">{{stateDropoff}}</h3>
+                    <h4 class="direction">{{directionDropoff}}</h4>
+                </div>
+                <div class="date-section">
+                    <h4 class="date">{{endDateDropoff | date: 'dd/MM/yy'}}</h4>
+                    <h3 class="time">{{endDateDropoff | date: 'hh:mm'}}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <app-btn-left [startDate]="startDate"/>
+            <app-btn-right/>
+        </div>
+    </div>
+</div>

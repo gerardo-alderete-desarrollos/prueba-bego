@@ -1,0 +1,12 @@
+<button class="btn-left" [disabled]="disabled">
+  <span class="start-pickup-in">
+      @if(disabled){
+        Start pickup in 
+        <span>
+          {{ time }} 
+        </span>
+      }@else {
+        Its time for pickup
+      }
+    </span>
+</button>

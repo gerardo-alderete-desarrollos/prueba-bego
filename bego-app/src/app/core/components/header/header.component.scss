@@ -1,0 +1,37 @@
+
+.header-container {
+    width: inherit;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back {
+    width: 10px;
+    height: 18px;
+}
+
+.title-header{
+    width: 128px;
+    height: 27px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #EDEDED;
+}
+
+/* Notification */
+.notification {
+    width: 24px;
+    height: 26px;
+}
+
+
+
+
+
+
