@@ -1,0 +1,201 @@
+.card-detail-container {
+    width: 357px;
+    height: 336px;
+    margin: 0 auto;
+}
+
+.order-title{
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.3px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #EDEDED;
+    padding: 0;
+    margin: 0;
+}
+
+.referencia-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.1px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #EDEDED;
+    padding: 0;
+    margin: 0;
+}
+
+.card{
+    background-color: #0f1316;
+    margin:0 auto;
+    width: 347.55px;
+    height: 265.5px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: 10px 25px;
+
+}
+
+.card-header {
+    width: 347.55px;
+    height: 51px;
+    display: flex;
+/*     justify-content: space-around;
+    align-items: baseline; */
+    flex-direction: column;
+}
+
+
+.text-icon {
+    height: 18px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15.5px;
+    line-height: 21px;
+    color: #EDEDED;
+    margin-left: 10px;
+}
+
+.intransit-img{
+    width: 10.03px;
+    height: 10.03px;
+    margin-right: 10px;
+}
+.text-status{
+    height: 15px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 10.4px;
+    line-height: 14px;
+    color: #EDEDED;
+}
+
+.card-body{
+/*     display: flex;
+    align-items: center; */
+    .line-icon{
+        position: relative;
+        left: 45px;
+        top: -12px;
+        width: 1.76px;
+        height: 70px;
+
+    }
+    .item {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        width: 346px;
+        height: 84px;
+        position: relative;
+
+        &.pin {
+    position: relative;
+    top: -58px;        }
+        .img-trailer {
+            width: 26.58px;
+            height: 17.68px;
+        }
+
+        .detail-section {
+            .name{
+                width: 37px;
+                height: 13px;
+                font-family: 'Avenir';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 7.9px;
+                line-height: 11px;
+                color: #535455;
+                margin:0px;
+            }
+            .state{
+                height: 17px;
+                font-family: 'Avenir';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 15.5px;
+                line-height: 21px;
+                color: #EDEDED;
+                margin:0px;
+            }
+            .direction{
+                width: 189px;
+                height: 18px;
+                font-family: 'Avenir';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12.6px;
+                line-height: 17px;
+                align-items: center;
+                color: #909192;
+                margin:0px;
+                padding: 0;
+                overflow: hidden;
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .status {
+                width: 90px;
+                height: 21px;
+                background: rgba(22, 25, 28, 0.996078);
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span{
+                    width: 54px;
+                    height: 15px;
+                    right: 10px;
+
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 11px;
+                    line-height: 13px;
+                    display: flex;
+                    align-items: center;
+                    color: #868889;
+                }
+            }
+        }
+
+        .black-circle {
+            width: 29px;
+            height: 29px;
+            background-color: #0E151A;
+            border-radius: 50%;
+            border: .5px solid #26333C;
+            box-shadow: 0 0 0 6px #0E151A;
+            color: black;
+        }
+        .yellow-circle {
+            width: 29px;
+            height: 29px;
+            background-color: #FFFF00;
+            border-radius: 50%;
+            border: .5px solid black;
+            box-shadow: 0 0 0 6px #FFFF00;
+            color: black;
+            opacity: .8;
+        }
+    }
+}
+
+
+
+
+
+
+
