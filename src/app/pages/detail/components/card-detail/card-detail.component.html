@@ -1,0 +1,52 @@
+<div class="card-detail-container">
+
+    
+    <div class="card">
+        <div class="card-header">
+                <h4 class="referencia-title">Referencia {{reference_number}}</h4>
+                <h3 class="order-title">
+                    Order #{{order_number}}
+                </h3>
+        </div>
+        <div class="card-body">
+            <div class="item" (click)="emitHandle('pickup')">
+                <img src="trailer.png" alt="" class="yellow-circle">
+                <div class="detail-section">
+                    <h5 class="name">PICKUP</h5>
+                    <h3 class="state">{{statePickup}}</h3>
+                    <h4 class="direction">{{directionPickup}}</h4>
+                    <div class="status">
+                        @if( destinations[0].status === 0){
+                            <img src="gray-circle.png" class="intransit-img">
+                        }@else if( destinations[0].status === 3 ){
+                            <img src="blue-circle.png" class="intransit-img">
+                        }
+                        <span>
+                            {{destinations[0].status_string}}
+                        </span>
+                   
+                    </div>
+                </div>
+            </div>
+            <img src="line.png"class="line-icon">
+            <div class="item pin" (click)="emitHandle('dropoff')">
+                <img src="black-circle-2.png" alt="" class="black-circle">
+                <div class="detail-section">
+                    <h5 class="name">DROPOFF</h5>
+                    <h3 class="state">{{stateDropoff}}</h3>
+                    <h4 class="direction">{{directionDropoff}}</h4>
+                    <div class="status">
+                        @if( destinations[1].status === 0){
+                            <img src="gray-circle.png" class="intransit-img">
+                        }@else if( destinations[1].status === 3 ){
+                            <img src="blue-circle.png" class="intransit-img">
+                        }
+                        <span>
+                            {{destinations[1].status_string}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

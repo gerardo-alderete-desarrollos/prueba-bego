@@ -1,0 +1,36 @@
+
+
+
+
+.btn-complete {
+    width: 360px;
+    height: 74px;
+    background: #FFEE00;
+    box-shadow: inset -4px -4px 4px #C2B500;
+    backdrop-filter: blur(35px);
+    border-radius: 0px 0px 19px 19px;
+    position: relative;
+    top: 79px;
+
+    &:disabled{
+        background-color: #081813;
+        color: #2d3134;
+        box-shadow: inset -4px -4px 4px #081813;
+    }
+}
+
+.track-order {
+    position: absolute;
+    width: 118px;
+    height: 23px;
+    right: 121px;
+    bottom: 17.49px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #080C0F;
+}

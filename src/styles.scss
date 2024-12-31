@@ -1,0 +1,31 @@
+body{
+    font-size: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0f1316;
+}
+
+.container {
+    //background-color: #080C0F;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.container-layout{
+    width: 440px;
+    height: 1600px;
+    max-height: 1500px;
+    top: 691px;
+    left: 676px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #080c0f;
+    margin: 0 auto;
+    padding: 0 25px 0 25px;
+}
+
+h1,h2,h3,h4,h5, div, span, p {
+    font-family: 'Avenir';
+}

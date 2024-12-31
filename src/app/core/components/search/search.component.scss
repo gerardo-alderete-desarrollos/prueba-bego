@@ -1,0 +1,31 @@
+
+.container-search{
+    width: inherit;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lupa-icon{
+    width: 18.01px;
+    height: 18.01px;
+    top: -29.09px;
+    left: -14.06px;
+    position: relative;
+}
+
+.search-bar {
+    margin: 20px 50px;
+    border: none;
+}
+  
+.searchBarInput {
+    background: transparent;
+    padding: 12px 26px;
+    border:none;
+    border-bottom: 1px solid gray;
+    width: 319px;
+    position: relative;
+    left: -16px;
+    color: white;
+}
